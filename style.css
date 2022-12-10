@@ -161,5 +161,15 @@ button:active {
 @media (max-width: 375px) {
   .card, .thank-you{
     margin: 1.5rem;
+    height: 22rem;
+    width: 20rem;
+  }
+
+  .ratings {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    height: 2.5rem;
   }
 }
