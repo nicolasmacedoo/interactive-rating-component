@@ -1,0 +1,116 @@
+:root {
+  --range: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --medium-dark-blue: hsl(213, 19%, 23%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 22rem;
+  height: 20rem;
+  padding: 1.5rem;
+  background-color: var(--dark-blue);
+  border-radius: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+.star {
+  height: 2rem;
+  width: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 100%;
+  background-color: var(--medium-dark-blue);
+  margin-bottom: 2rem;
+}
+
+.content h1 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  color: var(--medium-grey);
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.rates {
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.rate {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--medium-dark-blue);
+  color: var(--medium-grey);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.rate:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.rate.active {
+  background-color: var(--range);
+  color: var(--white);
+}
+
+button {
+  border: none;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5rem;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--range);
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--range);
+}
+
+button:active {
+  transform: scale(1.05);
+}
