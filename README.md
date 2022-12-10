@@ -22,8 +22,12 @@ Users should be able to:
  
  - Desktop version
  
-![](./images/screenshot-desktop.png)
+![](./public/images/screenshot-desktop.png)
+
+![](./public/images/screenshot-desktop2.png)
 
 - Mobile version
 
-![](./images/screenshot-mobile.png)
+![](./public/images/screenshot-mobile.png)
+
+![](./public/images/screenshot-mobile2.png)
